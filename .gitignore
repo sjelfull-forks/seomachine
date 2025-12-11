@@ -68,6 +68,13 @@ rewrites/*
 
 # Node modules if using any tools
 node_modules/
+.bun/
+bun.lockb
+
+# TypeScript/Build outputs
+dist/
+build/
+*.tsbuildinfo
 
 # Python
 __pycache__/
@@ -76,8 +83,6 @@ __pycache__/
 *.so
 
 # Distribution / packaging
-dist/
-build/
 *.egg-info/
 
 # Testing
@@ -108,7 +113,10 @@ venv/
 env/
 .venv/
 
-
 # GA4 Credentials (additional explicit entry)
 ga4-credentials.json
 google-analytics-credentials.json
+
+# Old Python files (being replaced with TypeScript)
+*.py
+!.github/**/*.py
