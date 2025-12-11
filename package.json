@@ -15,7 +15,8 @@
     "lint:fix": "oxlint src --fix",
     "type-check": "tsc --noEmit",
     "format": "prettier --write \"src/**/*.{ts,tsx}\"",
-    "format:check": "prettier --check \"src/**/*.{ts,tsx}\""
+    "format:check": "prettier --check \"src/**/*.{ts,tsx}\"",
+    "example": "npx tsx examples/analyze-content.ts"
   },
   "dependencies": {
     "dotenv": "^16.3.1"
